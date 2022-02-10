@@ -1,0 +1,14 @@
+---
+title: "CH3/40220"
+subtitle: "Crown ethers and derivatives"
+author: "Fiona Dickinson"
+date: "03/02/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+

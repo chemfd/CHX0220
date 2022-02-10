@@ -131,7 +131,7 @@ Table: The spontaneity of a reaction at different temperatures.
 
 ## Spontanaity 
 
-```{r echo=FALSE, Gibbstemp, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The temperature dependence of Gibbs free energy for different reaction types: endothermic and increase in entropy (top left), endothermic with a decrease in entropy (top right), exothermic with an increase in entropy (bottom left) and exothermix with a decrease in entropy (bottom right).'}
+```{r echo=FALSE, Gibbstemp, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The temperature dependence of Gibbs free energy for different reaction types: endothermic and increase in entropy (top left), endothermic with a decrease in entropy (top right), exothermic with an increase in entropy (bottom left) and exothermic with a decrease in entropy (bottom right).'}
 knitr::include_graphics("images/Gibbstemp.png")
 ```
 
@@ -188,30 +188,10 @@ this is sometimes expressed as the dissociation constant of the complex, $K_d$:
 $K_d = \frac{[R][L]}{[R \bullet L]}$
 </p>
 
-## Thermodynamics of binding
+## Chemical Thermodynamics in Context
 
-We can also express this just in terms of *either* bound or unbound concentration of receptor if we know the total concentration ($[R]_{\textrm{tot}}$) of receptor in solution:
+We will apply this very basic set of thermodynamic equations in this course to:
 
-<p align="center">
-$K_d = \frac{[R][L]}{[R \bullet L]} = \frac{([R]_{\textrm{tot}}-[R \bullet L])[L]}{[R \bullet L]}$
-</p>
-
-We can now express the fractional occupancy of binding sites, $F_b$ (fraction occupied divided by total number of binding sites):
-
-<p align="center">
-$F_b = \frac{[R \bullet L]}{[R]_{\textrm{tot}}}$
-</p>
-
-which rearranging we can express as:
-
-<p align="center">
-$F_b = \frac{[L]}{K_d+[L]}$
-</p>
-
-## Thermodynamics of binding
-
-This is all very nice, but we need to be able to determine values for the equilibrium constant (or at least values of the concentrations of bound or unbound form)
-
-This course will address this, and talk about a number of natural and synthetic binding complex systems...
-
+- develop mathematical models of binding
+- understand the thermodynamics behind a range of intermolecular interactions
 

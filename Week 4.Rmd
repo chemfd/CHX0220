@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Thermodynamics of binding
+
+We can also express this just in terms of *either* bound or unbound concentration of receptor if we know the total concentration ($[R]_{\textrm{tot}}$) of receptor in solution:
+
+<p align="center">
+$K_d = \frac{[R][L]}{[R \bullet L]} = \frac{([R]_{\textrm{tot}}-[R \bullet L])[L]}{[R \bullet L]}$
+</p>
+
+We can now express the fractional occupancy of binding sites, $F_b$ (fraction occupied divided by total number of binding sites):
+
+<p align="center">
+$F_b = \frac{[R \bullet L]}{[R]_{\textrm{tot}}}$
+</p>
+
+which rearranging we can express as:
+
+<p align="center">
+$F_b = \frac{[L]}{K_d+[L]}$
+</p>
+
+## Thermodynamics of binding
+
+This is all very nice, but we need to be able to determine values for the equilibrium constant (or at least values of the concentrations of bound or unbound form)
+
+This course will address this, and talk about a number of natural and synthetic binding complex systems...
+
+
