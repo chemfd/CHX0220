@@ -118,7 +118,7 @@ $\Delta S_{\textrm{sur}} = -\frac{\Delta U_\textrm{sys}}{T}$
 $\Delta A = \Delta U - T \Delta S$
 </p>
 
-## Spontenaity
+## Spontaneity
 
 Table: The spontaneity of a reaction at different temperatures.
 
@@ -129,9 +129,9 @@ Table: The spontaneity of a reaction at different temperatures.
 | − <br> exothermic | + | − | always spontaneous |
 | − <br> exothermic | − | − at low T <br> + at high T | spontaneous at low temperature |
 
-## Spontanaity 
+## Spontaneity 
 
-```{r echo=FALSE, Gibbstemp, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The temperature dependence of Gibbs free energy for different reaction types: endothermic and increase in entropy (top left), endothermic with a decrease in entropy (top right), exothermic with an increase in entropy (bottom left) and exothermic with a decrease in entropy (bottom right).'}
+```{r echo=FALSE, Gibbstemp, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The temperature dependence of Gibbs free energy for different reaction types: endothermic and increase in entropy (top left), endothermic with a decrease in entropy (top right), exothermic with an increase in entropy (bottom left) and exothermix with a decrease in entropy (bottom right).'}
 knitr::include_graphics("images/Gibbstemp.png")
 ```
 
@@ -168,30 +168,4 @@ $\ln K= -\frac{\Delta H}{R}\frac{1}{T} + \frac{\Delta S}{R}$
 knitr::include_graphics("images/vanthoff.png")
 ```
 
-## Thermodynamics of binding
-
-For the equilibrium between 'receptor', '$R$', and 'ligand', '$L$' forms complex [$R\bullet L$]:
-
-<p align="center">
-$R + L \rightleftharpoons R \bullet L$
-</p>
-
-with the equilibrium constant of binding, $K_b$ given by:
-
-<p align="center">
-$K_b = \frac{[R \bullet L]}{[R][L]}$
-</p>
-
-this is sometimes expressed as the dissociation constant of the complex, $K_d$:
-
-<p align="center">
-$K_d = \frac{[R][L]}{[R \bullet L]}$
-</p>
-
-## Chemical Thermodynamics in Context
-
-We will apply this very basic set of thermodynamic equations in this course to:
-
-- develop mathematical models of binding
-- understand the thermodynamics behind a range of intermolecular interactions
 
