@@ -198,6 +198,8 @@ It can be used to generate ultra pure K+ solutions by removing other group 1 met
 
 [Spherand](http://libproxy.bath.ac.uk/login?url=https://link.springer.com/content/pdf/10.1007%2F978-1-4899-7565-2_12.pdf)
 
+[Original spherand paper](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/ja00298a040)
+
 ## Other metal ion binders
 
 There are lots of other metal ion binders, often designed to be specific for particular ions
