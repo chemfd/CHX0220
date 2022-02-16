@@ -200,7 +200,7 @@ It can be used to generate ultra pure K+ solutions by removing other group 1 met
 
 ## Other metal ion binders
 
-There are lots of other metal ion binders, often designed to be specific for paricular ions
+There are lots of other metal ion binders, often designed to be specific for particular ions
 
 The principles are all the same, the more rigid the binder the higher the binding constant and usually the more selective it is
 
