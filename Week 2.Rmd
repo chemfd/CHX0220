@@ -30,6 +30,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - molecular systems that are held together reversibly using intermolecular interactions (*not* covalent bonds)
 
+[Supramolecular chemistry - Jean Marie Lehn](https://www-science-org.ezproxy1.bath.ac.uk/doi/epdf/10.1126/science.8511582)
+
+[Jean Marie Lehn's Nobel lecture](https://www.nobelprize.org/uploads/2018/06/lehn-lecture.pdf)
+
 ## Supramolecular Chemistry
 
 - seen a lot of examples of cation binding
@@ -38,10 +42,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
     -- EDTA (group II metals, Fe$^{3+}$, Pb$^{2+}$, Hg$^{2+}$, Mn$^{2+}$)
 
-    -- macrocycles (porphoryns - chlorophyll, haem)
+    -- macrocycles (porphyrins - chlorophyll, haem)
     
     
-\
+
 
 Many complexing agents are not selective
 
@@ -59,7 +63,7 @@ $K_b = \frac{[AB_n^{X+}]}{[A][B]^n}$
 
 ## From mistakes great chemistry comes
 
-```{r echo=FALSE, pedersensyn, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The proposed mechanism for the synthesis of a copper or vanadium binding complex.'}
+```{r echo=FALSE, pedersensyn, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The proposed mechanism for the synthesis of a Cu or V binding complex.'}
 knitr::include_graphics("images/pedersonsyn.png")
 ```
    
@@ -92,10 +96,10 @@ Crown ethers are systematically named:
 | | diameter / pm | Li^+^ | Na^+^ | K^+^ | Rb^+^ | Cs^+^ |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | | * | 152 | 204 | 276 | 304 | 334 |
-|[12]crown-4 | | | | | | |
-|[15]crown-5 | 170-220 | | 3.48| 3.77 | |2.18 |
-|[18]crown-6 | 260-320| |4.32 |6.10 | |4.62 |
-|[21]crown-7 | 340-430 | |1.93 |4.41 | |5.02 |
+|[12]crown-4 | | 2.14 |1.75 | 1.55| | |
+|[15]crown-5 | 170-220 | | 3.48| 3.77 |4.07 |2.18 |
+|[18]crown-6 | 260-320| |4.32 |6.10 | 5.32 |4.62 |
+|[21]crown-7 | 340-430 | |1.93 |4.41 | 4.86 |5.02 |
 
 
 log K~f~ in MeOH
@@ -138,17 +142,27 @@ Lariat ethers are modified crown ethers with a flexible side arm offering furthe
 
 ## Cryptands
 
-```{r echo=FALSE, out.width='20%', fig.show='hold', fig.align='center', fig.cap='The cage structure [2.2.2]cryptand.'}
+```{r echo=FALSE, out.width='15%', fig.show='hold', fig.align='center', fig.cap='The cage structure [2.2.2]cryptand.'}
 knitr::include_graphics("images/222cryptand.png")
 ```
 
 Cryptands are much like lariat ethers but  are more rigid with no hanging arm.
 
-The naming of cryptands refer to the number of oxgen atoms in each N-N linker.
 
-They were first reported by Jean-Marie Lehn.
+[They were first reported by Jean-Marie Lehn](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/ar50122a001).
 
 Cryptands bind more strongly than equivalent crown ethers for both entropic and enthalpic reasons.
+
+## Cryptands
+
+```{r echo=FALSE, out.width='15%', fig.show='hold', fig.align='center', fig.cap='The cage structure [2.2.2]cryptand.'}
+knitr::include_graphics("images/222cryptand.png")
+```
+
+
+The naming of cryptands refer to the number of oxgen atoms in each N-N linker.
+
+<span style="color:crimson">*The molecule above, [2.2.2]cryptand has two oxygens in each chain between the nitrogen groups*</span>
 
 ## Cryptands
 
@@ -156,9 +170,20 @@ Cryptands bind more strongly than equivalent crown ethers for both entropic and 
 |:------:|:------:|:------:|:------:|
 | [2.1.1]cryptand | 5.5 / 8.1 | - | - |
 | [2.2.1]cryptand | 2.5 / 5.4 | 5.4 / 8.8 | 4.0 / 7.5 |
-| [2.1.1]cryptand | - | 3.9 / 7.9 | 5.4 / 10.4 |
+| [2.2.2]cryptand | - | 3.9 / 7.9 | 5.4 / 10.4 |
 
 log K~f~: water / MeOH
+
+## Cryptands
+
+Lengthening the bridges of the macrobicyclic system affects the intramolecular cavity size
+
+[1.1.1]cryptand 120 pm to [3.3.3]cryptand 480 pm
+
+This changes the selectivity of the complex, however the more flexability introduce the less selective the cryptand.
+
+[1.1.1]cryptand is selective for 1 or 2 protons
+
 
 ## The chelate and macrocycle effects
 
@@ -176,9 +201,20 @@ The macrocycle effect has both entropic and enthalpic contributions.
 
 ## The chelate and macrocycle effects
 
-```{r echo=FALSE, out.width='50%', fig.show='hold', fig.align='center', fig.cap='Podand (left), [18]crown-6 (center) and [2.2.2]cryptand (right), the binding constant to potassium increases as the rigidity in the ligand or macrocycle increases.'}
+```{r echo=FALSE, out.width='80%', fig.show='hold', fig.align='center', fig.cap='Podand (left), [18]crown-6 (center) and [2.2.2]cryptand (right), the binding constant to potassium increases as the rigidity in the ligand or macrocycle increases.'}
 knitr::include_graphics("images/macrocycles.png")
 ```
+
+## The cryptate effect
+
+The same effect is seen for the bicyclic cryptands (over the lariat ethers), but the enhancement is even stronger
+
+log $K_b$ = 4.8 for the lariat ether (actually methyl substituted)
+
+log $K_b$ = 9.75 for [2.2.2]cryptand
+
+
+(95:5)MeOH:H~2~O
 
 ## Spherand
 
@@ -194,7 +230,7 @@ Spherand binds Li^+^ (log $K_b$ > 17) and Na^+^ (log $K_b$ = 14.1) very strongly
 
 It will not bind to any other ion as the spherical cavity is too small
 
-It can be used to generate ultra pure K+ solutions by removing other group 1 metals not easily removed
+It can be used to generate ultra pure K^+^ solutions by removing other group 1 metals not easily removed
 
 [Spherand](http://libproxy.bath.ac.uk/login?url=https://link.springer.com/content/pdf/10.1007%2F978-1-4899-7565-2_12.pdf)
 
@@ -207,6 +243,14 @@ There are lots of other metal ion binders, often designed to be specific for par
 The principles are all the same, the more rigid the binder the higher the binding constant and usually the more selective it is
 
 
+## The workshop
 
+[Selectivity of Xcrown-4 complexes to lithium ions](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/abs/10.1021/jo00072a024)
 
+[Thermodynamics of cryptand binding](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/ja00856a018)
 
+[Thermodynamics of spherand binding](http://libproxy.bath.ac.uk/login?url=https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.198610393)
+
+I don't expect you to 'read' the papers, but we will look at the data, learn about Lehn diagrams and break down the role of entalpic and entropic contributions to binding.
+
+These papers will also be linked on Moodle.
