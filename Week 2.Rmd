@@ -13,8 +13,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Course Timetable
 
 - Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
-- Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
-- Week 3: <span style="color:crimson">In Person - Workshop (research paper based exercise)</span>
+- Week 2: <span style="color:crimson">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
+- Week 3: In Person - Workshop (research paper based exercise)
 - Week 4: <span style="color:darkturquoise">LOIL - Lecture - Self assembly the basics, DNA duplexing and beyond</span>
 - Week 5: In Person - Workshop (research paper based exercise) 
 - Week 6: <span style="color:darkturquoise">LOIL - Lecture - Tertiary structures</span>
@@ -23,6 +23,224 @@ knitr::opts_chunk$set(echo = FALSE)
 - Week 9: In Person - Workshop (research paper based exercise)
 - Week 10: <span style="color:darkturquoise">LOIL - Lecture - Solvation, hydrodynamics & osmosis</span>
 - Week 11: In Person - Workshop example exam questions
+
+## Supramolecular Chemisty
+
+*'chemistry beyond the molecule'*
+
+- molecular systems that are held together reversibly using intermolecular interactions (*not* covalent bonds)
+
+[Supramolecular chemistry - Jean Marie Lehn](https://www-science-org.ezproxy1.bath.ac.uk/doi/epdf/10.1126/science.8511582)
+
+[Jean Marie Lehn's Nobel lecture](https://www.nobelprize.org/uploads/2018/06/lehn-lecture.pdf)
+
+## Supramolecular Chemistry
+
+- seen a lot of examples of cation binding
+
+    -- transition metal complexes
+
+    -- EDTA (group II metals, Fe$^{3+}$, Pb$^{2+}$, Hg$^{2+}$, Mn$^{2+}$)
+
+    -- macrocycles (porphyrins - chlorophyll, haem)
+    
+    
+
+
+Many complexing agents are not selective
+
+## The thermodynamics of binding
+
+<p align="center">
+$A^{X+}+nB \leftrightharpoons AB_n^{X+}$
+</p>
+
+Then the equilibrium constant K is given by:
+
+<p align="center">
+$K_b = \frac{[AB_n^{X+}]}{[A][B]^n}$
+</p>
+
+## From mistakes great chemistry comes
+
+```{r echo=FALSE, pedersensyn, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The proposed mechanism for the synthesis of a Cu or V binding complex.'}
+knitr::include_graphics("images/pedersonsyn.png")
+```
+   
+## From mistakes great chemistry comes
+
+Charles J. Pedersen actually made:
+
+\
+
+```{r echo=FALSE, dibenzo18crown6, out.width='50%', fig.show='hold', fig.align='center', fig.cap='Dibenzo[18]crown-6.'}
+knitr::include_graphics("images/dibenzo18crown6.png")
+```
+
+The sodium had helped template this *new* molecule.
+
+## Crown ethers
+
+```{r echo=FALSE, out.width='30%', fig.show='hold', fig.align='center', fig.cap='[12]crown-4.'}
+knitr::include_graphics("images/12crown4.png")
+```
+
+Crown ethers are systematically named:
+
+- number of atoms in the macrocycle <span style="color:crimson">[X]</span>
+
+- number of oxygens in the ring <span style="color:crimson">-y </span>
+
+## Crown ethers
+
+| | diameter / pm | Li^+^ | Na^+^ | K^+^ | Rb^+^ | Cs^+^ |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| | * | 152 | 204 | 276 | 304 | 334 |
+|[12]crown-4 | | 2.14 |1.75 | 1.55| | |
+|[15]crown-5 | 170-220 | | 3.48| 3.77 |4.07 |2.18 |
+|[18]crown-6 | 260-320| |4.32 |6.10 | 5.32 |4.62 |
+|[21]crown-7 | 340-430 | |1.93 |4.41 | 4.86 |5.02 |
+
+
+log K~f~ in MeOH
+
+
+*effective ionic diameter
+
+## Substituted crowns
+
+Crown ethers are particularly good at selecting for group 1 metal ions.
+
+Substituting the oxygen atoms for 'softer' donors can instead select for transition metals
+
+```{r echo=FALSE, out.width='100%', fig.show='hold', fig.align='center', fig.cap='Substituion of [18]crown-6 to form aza- and thia- crowns.'}
+knitr::include_graphics("images/subcrowns.png")
+```
+
+## Substituted crowns
+
+```{r echo=FALSE, out.width='80%', fig.show='hold', fig.align='center', fig.cap='1. [18]crown-6, 2. 1,10-dithia[18]crown-6, 3. 1-aza[18]crown-6 and 4. 1,10-diaza[18]crown-6.'}
+knitr::include_graphics("images/subcrowns.png")
+```
+
+| | 1 | 2 | 3 | 4 |
+|:----:|:----:|:----:|:----:|:----:|
+| K^+^ | 6.10 | 1.15 | 3.90 | 2.04 |
+| Ag^+^ | 1.60 | 4.34 | 3.30 | 7.80 |
+
+log K~f~: MeOH (K^+^), H~2~O (Ag^+^)
+
+## Lariat ethers
+
+```{r echo=FALSE, out.width='20%', fig.show='hold', fig.align='center', fig.cap='The lariat ether N-(3,6-dioxaseptyl)-aza-[18]crown-6'}
+knitr::include_graphics("images/lariatether.png")
+```
+
+Lariat ethers are modified crown ethers with a flexible side arm offering further bonding opportunitites.
+
+[Lariat ethers behaving as bis-crowns](http://libproxy.bath.ac.uk/login?url=https://pdf.sciencedirectassets.com/271373/1-s2.0-S0040403900X07459/1-s2.0-S0040403901804329/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHcaCXVzLWVhc3QtMSJHMEUCIQDRwhaD636lA3j8MobuI1a897bjGdK%2FsaHAQnDQNu2ZugIgJ1Vi%2FdvKfpguuYy6jiQBedaIEE1jiAwCY0KHuFw4b%2BEqgwQIv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwwNTkwMDM1NDY4NjUiDEsl8dXHXQDu%2FZ0%2BgCrXA7R2T7gR8C4fn4nvJyHnEAcL8l1Y%2FjLtxhu%2FXZbojUax4GcDzWvTx1Hj8CDJKLvh7GH2mhFRq2HFNOpPlMsdcOzferz9wU4nQWvS4DDAmkMiAdHU7Gx0pgsLyPBF6TMY86mZIZFbmXetkd32fiEQQACk344WEmvEc1sc0tQ4x3V0Z3ocsUJh7XT96mBVP0JsY1TUbzMnn%2FcATPKc8vapZ4dnvseBYhddfVi%2BXVHE6XbDVsV1CofkkxgbvIK4Cjx1BYnBQ%2BRs%2FL1jS76RNtt3CqxJ%2BpCB6Fc%2B8lhMUhh2JomB4szro01aj9X5xwDL7OazW0BWj7Jx%2B%2BHYYK5GIE3x%2FwRb4%2F8iTEkOmcNGhHjJTknuqikh2ZcVLdjqpod%2FTanY5NrpOiewVu7i5FN1%2B2HU5HE56ymwigNGQTxrgaUBlmgPNFO3s8hRKQ1FOpJA4ohrs09Gexg0OXdXmQtbdVMsvVQ0N6yCg97kCLuWVgrpCsqaIFPMFSJtVZadiBaxruSwKM8Cj0FCHpskFl7YgcQiKgF8pqZGmRz%2Bdz9wkfBoTATcsIgs4SsPSapoJuI2OeUUFG6KLsY5iGdBT524Yqp8An%2Bro8ETr2rLFTU30uDgxSlVYAck5flprTDVjbSQBjqlAXZivUzucPRbx5SG%2BLIMZqzXphwjHI2DRUe1tJnKZL%2F%2BBZxP4FFs0qGcioFhTbydLTFg%2FDlvzOIAXDxHrC%2BpuYacV6eyFi2MdiWFlqcjJoAh4l0r47rlrkmLuMmYZBQQpiX8zBR6ctwI1BPHss2isN7fToPfywVnniWURrnWeW0xgjZJ00sptdCC1jb94JDsYkk%2F%2B%2F0y7XLih6dAMQnfQTeEWctg%2BQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220216T152541Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYVQJVAOZQ%2F20220216%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=297737a13165fdd9107bb7d81914de27bb3aa41b2492d4eac73cdf01e65a8043&hash=bf87c2e396466ddc485c55004a34804bf035a98bb748af5f8908442d9a8dc5d0&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0040403901804329&tid=spdf-22a58b5b-ad1c-420a-8be4-c000e6015984&sid=0482faf0610ff44b8c09c096d3a9bce7ff6cgxrqb&type=client&ua=4c010252070355055c0156&rr=6de7ca3a8a77f3e7)
+
+## Cryptands
+
+```{r echo=FALSE, out.width='15%', fig.show='hold', fig.align='center', fig.cap='The cage structure [2.2.2]cryptand.'}
+knitr::include_graphics("images/222cryptand.png")
+```
+
+Cryptands are much like lariat ethers but  are more rigid with no hanging arm.
+
+
+[They were first reported by Jean-Marie Lehn](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/ar50122a001).
+
+Cryptands bind more strongly than equivalent crown ethers for both entropic and enthalpic reasons.
+
+## Cryptands
+
+```{r echo=FALSE, out.width='15%', fig.show='hold', fig.align='center', fig.cap='The cage structure [2.2.2]cryptand.'}
+knitr::include_graphics("images/222cryptand.png")
+```
+
+
+The naming of cryptands refer to the number of oxgen atoms in each N-N linker.
+
+<span style="color:crimson">*The molecule above, [2.2.2]cryptand has two oxygens in each chain between the nitrogen groups*</span>
+
+## Cryptands
+
+| | Li^+^ | Na^+^ | K^+^|
+|:------:|:------:|:------:|:------:|
+| [2.1.1]cryptand | 5.5 / 8.1 | - | - |
+| [2.2.1]cryptand | 2.5 / 5.4 | 5.4 / 8.8 | 4.0 / 7.5 |
+| [2.2.2]cryptand | - | 3.9 / 7.9 | 5.4 / 10.4 |
+
+log K~f~: water / MeOH
+
+## Cryptands
+
+Lengthening the bridges of the macrobicyclic system affects the intramolecular cavity size
+
+[1.1.1]cryptand 120 pm to [3.3.3]cryptand 480 pm
+
+This changes the selectivity of the complex, however the more flexability introduce the less selective the cryptand.
+
+[1.1.1]cryptand is selective for 1 or 2 protons
+
+
+## The chelate and macrocycle effects
+
+<span style="color:crimson">*The chelate effect*</span>
+
+The association constant, $K_b$, for an n-dentate ligand is greater than that for n monodentate ligands with the same type of donor atoms. 
+
+The chelate effect is primarily entropic in origin.
+
+<span style="color:crimson">*The macrocycle effect*</span>
+
+The association constant, $K_b$, for a cyclic n-dentate ligand is greater than that for a linear n-dentate ligand. 
+
+The macrocycle effect has both entropic and enthalpic contributions.
+
+## The chelate and macrocycle effects
+
+```{r echo=FALSE, out.width='80%', fig.show='hold', fig.align='center', fig.cap='Podand (left), [18]crown-6 (center) and [2.2.2]cryptand (right), the binding constant to potassium increases as the rigidity in the ligand or macrocycle increases.'}
+knitr::include_graphics("images/macrocycles.png")
+```
+
+## The cryptate effect
+
+The same effect is seen for the bicyclic cryptands (over the lariat ethers), but the enhancement is even stronger
+
+log $K_b$ = 4.8 for the lariat ether (actually methyl substituted)
+
+log $K_b$ = 9.75 for [2.2.2]cryptand
+
+
+(95:5)MeOH:H~2~O
+
+## Spherand
+
+Spherand were designed by Donald Cram (by computational modelling) to have rigid structures so no reorganisation of the cage was required upon binding of the target ions.
+
+```{r echo=FALSE, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The rigid hexadentate ligand spherand.'}
+knitr::include_graphics("images/spherand.png")
+```
+
+## Spherand
+
+Spherand binds Li^+^ (log $K_b$ > 17) and Na^+^ (log $K_b$ = 14.1) very strongly
+
+It will not bind to any other ion as the spherical cavity is too small
+
+It can be used to generate ultra pure K^+^ solutions by removing other group 1 metals not easily removed
+
+[Spherand](http://libproxy.bath.ac.uk/login?url=https://link.springer.com/content/pdf/10.1007%2F978-1-4899-7565-2_12.pdf)
+
+[Original spherand paper](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/ja00298a040)
+
+## Other metal ion binders
+
+There are lots of other metal ion binders, often designed to be specific for particular ions
+
+The principles are all the same, the more rigid the binder the higher the binding constant and usually the more selective it is
 
 
 ## The workshop
@@ -33,40 +251,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [Thermodynamics of spherand binding](http://libproxy.bath.ac.uk/login?url=https://onlinelibrary.wiley.com/doi/epdf/10.1002/anie.198610393)
 
-## Workshop - 1
+I don't expect you to 'read' the papers, but we will look at the data, learn about Lehn diagrams and break down the role of entalpic and entropic contributions to binding.
 
-**Crown ether paper**
-
-- Is the enthalpy of binding just a property of the number of bonds made?
-
-- If not what factors affect the enthalpy of binding?
-
-In all cases the binding is endothermic with a positive entropy change. Does this make the binding more or less favorable at  higher temperatures?
-
-- The 'benzo rings' have negative entropy contriubtions, whereas the 'plain' crown ethers do not. Why may this be the case?
-
-## Workshop - 2
-
-**Cyptate paper**
-
-- Given Li^+^ and Mg^2+^ have approximately the same ionic radius suggest why there is such a large difference in the binding constant K~b~ (5.5 & 2.5 respectively) to [2.1.1]cryptate.
-
-- Suggest why moving from 95:5 MeOH:H~2~O to water decreases complex stability.
-
-- For the K^+^ the diaza-crown (8), the lariat ether (9) and the [2.2.1]cryptand shows a marked increase in binding constant (K~b~ = 4.38, 4.80 & 7.45 respectively). Explain this in terms of the thermodynamics of binding.
-
-## Workshop - 3
-
-**Spherand paper**
-
-p1048
-
-- There is a large difference in the binding constant of Li^+^ when moving from molecule *10* - *3* - *8*, justify this in terms of the structure of the spherands and the effect this will have on the thermodynamics.
-
-- Why is this effect different (and less pronounced) for K^+^ binding?
-
-- Why is the binding more favorable than for molecule *4* the equivalent cryptand for *8*?
-
-## General notes
-
-Do you understand how to read a 'Lehn diagram'.
+These papers will also be linked on Moodle.
