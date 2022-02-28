@@ -1,5 +1,8 @@
 ---
-title: "Untitled"
+title: "CH3/40220"
+subtitle: "Self-assembly: The basics"
+author: "Fiona Dickinson"
+date: "28/02/2022"
 output: ioslides_presentation
 ---
 
@@ -7,30 +10,69 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Thermodynamics of binding
+## Course Timetable
 
-We can also express this just in terms of *either* bound or unbound concentration of receptor if we know the total concentration ($[R]_{\textrm{tot}}$) of receptor in solution:
+- Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
+- Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
+- Week 3: <span style="color:lightgrey">In Person - Workshop (research paper based exercise)</span>
+- Week 4: <span style="color:crimson">LOIL - Lecture - Self assembly the basics, DNA duplexing and beyond</span>
+- Week 5: In Person - Workshop (research paper based exercise) 
+- Week 6: <span style="color:darkturquoise">LOIL - Lecture - Tertiary structures</span>
+- Week 7: In Person - Workshop (research paper based exercise)
+- Week 8: <span style="color:darkturquoise">LOIL - Lecture - Binding of small molecules to biopolymers</span>
+- Week 9: In Person - Workshop (research paper based exercise)
+- Week 10: <span style="color:darkturquoise">LOIL - Lecture - Solvation, hydrodynamics & osmosis</span>
+- Week 11: In Person - Workshop example exam questions
 
-<p align="center">
-$K_d = \frac{[R][L]}{[R \bullet L]} = \frac{([R]_{\textrm{tot}}-[R \bullet L])[L]}{[R \bullet L]}$
-</p>
+## DNA bases
 
-We can now express the fractional occupancy of binding sites, $F_b$ (fraction occupied divided by total number of binding sites):
+DNA is (usually) composed of four different heterocyclic bases:
 
-<p align="center">
-$F_b = \frac{[R \bullet L]}{[R]_{\textrm{tot}}}$
-</p>
+- the purines:
 
-which rearranging we can express as:
+```{r echo=FALSE, purines, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The purine bases of DNA: guanine (G) left and adenine (A), right.'}
+knitr::include_graphics("images/purines.png")
+```
 
-<p align="center">
-$F_b = \frac{[L]}{K_d+[L]}$
-</p>
+- the pyrimidines
 
-## Thermodynamics of binding
+```{r echo=FALSE, pyrimidines, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The pyrimidine bases of DNA: cytosine (C) left and thymine (T), right.'}
+knitr::include_graphics("images/pyrimidines.png")
+```
 
-This is all very nice, but we need to be able to determine values for the equilibrium constant (or at least values of the concentrations of bound or unbound form)
+bound to a sugar  and phosphate group (R).
 
-This course will address this, and talk about a number of natural and synthetic binding complex systems...
+## Nucleotides
+
+```{r echo=FALSE, dG, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The purine base guanosine bound to the deoxyribose sugar and phosphate, the polymer is a repeat of the unit with a bond connecting the dashed lines'}
+knitr::include_graphics("images/dG.png")
+```
+
+Polymer DNA is formed by polymerisation along the sugar phosphate backbone (phosphodiester bonds).
+
+The DNA has 'direction' due to this asymmetry of the sugar phosphate backbone.
 
 
+## GC Base Pairing
+
+```{r echo=FALSE, GCbasepair, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The base pairing between guanine and cytosine with three hydrogen bonds. Note one of the bases is flipped over, due to the two strands running antiparallel.'}
+knitr::include_graphics("images/GCbasepair.png")
+```
+
+
+## AT Base Pairing
+
+```{r echo=FALSE, ATbasepair, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The base pairing between adenine and thymine with just two hydrogen bonds. Note one of the bases is flipped over, due to the two strands running antiparallel.'}
+knitr::include_graphics("images/ATbasepair.png")
+```
+
+
+## DNA duplexing
+
+```{r echo=FALSE, DNAmelt, out.width='40%', fig.show='hold', fig.align='center', fig.cap='As the temperature increases the absorbance of a sample of DNA also increaes, this is due to melting of the DNA duplex, and loss of quadrupole π interactions between the stacked base pairs.'}
+knitr::include_graphics("images/DNAmelt.png")
+```
+
+We know that there is a temperature dependence of absorption when a solution of DNA is heated. 
+
+[Forces in the DNA duplex](http://libproxy.bath.ac.uk/login?url=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7351851/)
