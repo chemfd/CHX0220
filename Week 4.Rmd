@@ -73,6 +73,60 @@ knitr::include_graphics("images/ATbasepair.png")
 knitr::include_graphics("images/DNAmelt.png")
 ```
 
-We know that there is a temperature dependence of absorption when a solution of DNA is heated. 
+We know that there is a temperature dependence of absorption when a solution of DNA is heated.
+
+The melting temperature T~m~ is the temperature 'halfway between the turning points'.
 
 [Forces in the DNA duplex](http://libproxy.bath.ac.uk/login?url=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7351851/)
+
+## DNA duplexing
+
+However the 'melting temperature' is not just a property of the number of hydrogen bonds between base pairs.
+
+For example the melting temperature of poly(dA)・poly(dT) is higher than poly[d(AT)]・poly[d(TA)].
+
+The stability of DNA duplexing is down to both the base pairs & the base sequence.
+
+[Predicting DNA duplex stability from the base sequence](http://libproxy.bath.ac.uk/login?url=https://www.pnas.org/doi/pdf/10.1073/pnas.83.11.3746)
+
+
+## Sequence specific effects{.smaller}
+
+|Interaction | −ΔH / kJ mol$^{-1}$ | −ΔS / kJ K$^{-1}$ mol$^{-1}$ | −ΔG / kJ mol$^{-1}$ |
+|:----:|:----:|:----:|:----:|
+| AA/TT |  38 |  100.4 | 7.9 |
+| AT/TA | 36 | 100.0 | 6.3 |
+| TA/AT | 25 | 71.7 | 3.8 |
+| CA/GT | 24 | 54.0 | 7.9 |
+| GT/CA | 27 | 72.4 | 5.4 |
+| CT/GA | 33 | 87.0 | 6.7 |
+| GA/CT | 23 | 56.4 | 6.7 |
+| CG/GC | 49.8 | 116.3 | 15.1 |
+| GC/CG | 46.4 | 111.7 | 13.0 |
+| GG/CC | 46.0 | 111.3 | 13.0 |
+
+
+Data from: [Predicting DNA duplex stability from the base sequence](http://libproxy.bath.ac.uk/login?url=https://www.pnas.org/doi/pdf/10.1073/pnas.83.11.3746)
+
+## Sequence specific effects on the enthalpy of duplexing
+
+The enthalpy of hybridisation is given by:
+
+
+$\Delta H_{\textrm{total}}= \Delta h_i  + \sum_x \Delta h_x$
+
+where 
+
+- $\Delta h_i$ is the initiation enthalpy (which can reasonably be assumed to be zero)
+- $\Delta h_x$ is the contribution from each of the base sequence combinations
+
+## Sequence specific effects on the free energy of duplexing
+
+A similar process can be used to determine the free energy of duplexing
+
+$\Delta G_{\textrm{total}}= -(\Delta g_i+ \Delta g_{\textrm{sym}})  + \sum_x \Delta g_x$
+
+in this case the helix initiation free energy ($\Delta g_i$) can be assumed to be around 20 kJ mol^-1^ for duplexes containing GC and 24 kJ mol^-1^ for sequences exclusively containing AT base pairs.
+
+The  term $\Delta g_{\textrm{sym}}$ is 1.6 kJ mol^-1^ for 'self complementary' sequences and 0 otherwise.
+
