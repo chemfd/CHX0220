@@ -79,6 +79,30 @@ The melting temperature T~m~ is the temperature 'halfway between the turning poi
 
 [Forces in the DNA duplex](http://libproxy.bath.ac.uk/login?url=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7351851/)
 
+## Factors affecting duplex melting temperature
+
+<div class="columns-2">
+
+```{r echo=FALSE, GCtemp, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The melting temperature of polymer DNA increases with increasing GC base pair proportion.'}
+knitr::include_graphics("images/GCtempeffect.png")
+```
+
+The length of the polymer also affects the melting temperature, the longer the polymer the higher the melting temperature.
+
+Salt concentration (cation) also affects the melting temperature as it reduces the columbic interactions between the negatively charged phosphate backbone.
+
+</div>
+
+## Melting and cooling
+
+```{r echo=FALSE, hysterisis, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Heating and cooling of DNA duplex samples shows hysterisis due to kinetic factors.'}
+knitr::include_graphics("images/hysterisis.png")
+```
+
+Unless samples are cooled very slowly they will not anneal.
+
+Only 'oligomer' short strands will anneal.
+
 ## DNA duplexing
 
 However the 'melting temperature' is not just a property of the number of hydrogen bonds between base pairs.
