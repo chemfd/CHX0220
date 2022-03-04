@@ -93,6 +93,8 @@ Salt concentration (cation) also affects the melting temperature as it reduces t
 
 </div>
 
+[Enthalpy and entropy in DNA melting](https://www.jbc.org/action/showPdf?pii=S0021-9258%2818%2983065-4)
+
 ## Melting and cooling
 
 ```{r echo=FALSE, hysterisis, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Heating and cooling of DNA duplex samples shows hysterisis due to kinetic factors.'}
@@ -154,3 +156,63 @@ in this case the helix initiation free energy ($\Delta g_i$) can be assumed to b
 
 The  term $\Delta g_{\textrm{sym}}$ is 1.6 kJ mol^-1^ for 'self complementary' sequences and 0 otherwise.
 
+## PCR{.smaller}
+
+The polymerase chain reaction uses a number of thermodynamic 'melt - anneal' cycles.
+
+```{r echo=FALSE, PCR, out.width='80%', fig.show='hold', fig.align='center', fig.cap='DNA is denatured by heating to high temperatures (95 ºC) to melt the DNA, rapid cooling to 55 ºC where primers bind to complementary sequences, followed by heating to 72 ºC where the polymerase catalyses formation of strands.'}
+knitr::include_graphics("images/PCR.png")
+```
+
+Enzoklop, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+
+
+## Primary, Secondary & Tertiary Structure
+
+- **Primary** the 'sequence' of the DNA bases along the strand
+
+- **Secondary** the duplexing (or otherwise) - so duplex, quadruplex
+
+- **Tertiary** the overall 'shape' of the DNA - the 'double helix'
+
+- **Quaternary** how these tertiary structures can be built together
+
+## Tertiary structures
+
+The 'classic' DNA is 'B-form'
+
+```{r echo=FALSE, BDNA, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The tertiary structure of B-form DNA showing the major and minor groove.'}
+knitr::include_graphics("images/BDNA.png")
+```
+
+Bases are separated by the *van der Waals distance* of 3.32 Å,  and the double helix is about 23.7 Å in diameter. One complet turn is completed in just over 10 base pairs.
+
+## Tertiary structures
+
+There are other *cellular* DNA forms that can occur.
+
+```{r echo=FALSE, ABZDNA, out.width='30%', fig.show='hold', fig.align='center', fig.cap='A-(left), B-(centre) and Z-(right) form DNA, each a duplex*.'}
+knitr::include_graphics("images/DNAconformations.png")
+```
+
+A- & B- form DNA are both right handed helicies, and Z-form a left handed helix.
+
+Each have the same base pair interactions
+
+*Mauroesguerroto, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+
+## Molecular meccano
+
+[Review article Supramolecular DNA structures](https://pubs-rsc-org.ezproxy1.bath.ac.uk/en/content/articlepdf/2011/cs/c1cs15253j)
+
+
+*Fiona to attempt some bad sketching*
+
+## The Workshop
+
+We are going to look at some of the thermodynamics of duplexing
+
+[DNA nearest neighbour thermodynamics](http://libproxy.bath.ac.uk/login?url=https://www.pnas.org/doi/full/10.1073/pnas.95.4.1460)
+
+Please take a 'quick read' of this whole paper before the workshop.
