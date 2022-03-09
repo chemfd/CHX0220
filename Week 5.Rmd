@@ -10,12 +10,7 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-## Course Timetable
+ß## Course Timetable
 
 - Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
 - Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
@@ -36,10 +31,25 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Workshop - 1
 
+Why are the Free energies of duplexing given at 37 ºC?
 
+Why does the heat capacity of folded and denatured states matter?
+
+Why does the concentration of strands matter to the melting temperature?
 
 ## Workshop - 2
+
+Why does the concentration of salt (specifically cations) matter and affect the free energies of binding? Are there trends to this?
+
+Why are these salt effects likely to be different for GC base pairs than AT base pairs?
 
 
 
 ## Workshop - 3
+
+Calculate the predicted melting temperature of calf thymus DNA in 500 mM Na^+^ phosphate buffer. CT DNA is 41.9% GC.
+
+What assumptions have been made?
+
+What is the relation of this melting temperature to the thermodynamics of the system?
+
