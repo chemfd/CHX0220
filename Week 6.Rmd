@@ -9,6 +9,45 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Course Timetable
+
+- Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
+- Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
+- Week 3: <span style="color:lightgrey">In Person - Workshop (research paper based exercise)</span>
+- Week 4: <span style="color:lightgrey">LOIL - Lecture - Self assembly the basics, DNA duplexing and beyond</span>
+- Week 5: <span style="color:lightgreymm">In Person - Workshop (research paper based exercise) </span>
+- Week 6: <span style="color:crimson">LOIL - Lecture - Tertiary structures</span>
+- Week 7: In Person - Workshop (research paper based exercise)
+- Week 8: <span style="color:darkturquoise">LOIL - Lecture - Binding of small molecules to biopolymers</span>
+- Week 9: In Person - Workshop (research paper based exercise)
+- Week 10: <span style="color:darkturquoise">LOIL - Lecture - Solvation, hydrodynamics & osmosis</span>
+- Week 11: In Person - Workshop example exam questions
+
+
+## Thermodynamics of binding
+
+For the equilibrium:
+
+<p align="center">
+$A+B \leftrightharpoons AB$
+</p>
+
+Then the equilibrium constant K is given by:
+
+<p align="center">
+$K = \frac{[AB]}{[A][B]}$*
+</p>
+
+of this can be expressed in terms of the equilibrium of dissociation of the complex:
+
+<p align="center">
+$AB \leftrightharpoons A+B$
+</p>
+
+<p align="center">
+$K_d = \frac{[A][B]}{[AB]}$*
+</p>
+
 ## Thermodynamics of binding
 
 We can also express this just in terms of *either* bound or unbound concentration of receptor if we know the total concentration ($[R]_{\textrm{tot}}$) of receptor in solution:

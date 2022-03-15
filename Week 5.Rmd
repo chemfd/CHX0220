@@ -10,7 +10,7 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-ß## Course Timetable
+## Course Timetable
 
 - Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
 - Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
