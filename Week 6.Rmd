@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Binding of small molecules to biopolymers"
 author: "Fiona Dickinson"
 date: "28/02/2022"
 output: ioslides_presentation
@@ -27,6 +27,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 There are a range of methods of doing experiments and analysing data to determine the binding constants between ligand and receptor.
 
+Fundamentally they all depend upon there being a linear change in a measurable property, this allows deptermination of the concentrations of different species in solution
+
 ## Job's method
 
 Sometimes called the method of continuous variations
@@ -35,11 +37,9 @@ Used to look at the stoichiometry of a binding event.
 
 Need a change in response of a physical property, P, with binding - UV/Vis absorbance , enzyme activity, conductivity, circular dichroism, melting point depression, NMR
 
-This response should be linear with concentration
-
 Assumes only a single complex is formed
 
-For the equilibrium formation of a complex ML~n~ there are only three species in solution, R, L and RL~n~
+For the equilibrium formation of a complex RL~n~ there are only three species in solution, R, L and RL~n~
 
 Vary the mole factions of R & L (at constant ionic strength, pH, solvent mixture *etc*)
 
@@ -63,13 +63,14 @@ For the equilibrium:
 $A+B \leftrightharpoons AB$
 </p>
 
-Then the equilibrium constant $K$ or $K_b$ is given by:
+Then the equilibrium constant $K$ (or $K_b$) is given by:
 
 <p align="center">
 $K = \frac{[AB]}{[A][B]}$
 </p>
 
-of this can be expressed in terms of the equilibrium of dissociation of the complex:
+
+This can also be expressed in terms of the equilibrium of dissociation of the complex:
 
 <p align="center">
 $AB \leftrightharpoons A+B$
@@ -79,31 +80,6 @@ $AB \leftrightharpoons A+B$
 $K_d = \frac{[A][B]}{[AB]}$
 </p>
 
-## Thermodynamics of binding
-
-We can also express this just in terms of *either* bound or unbound concentration of receptor if we know the total concentration ($[R]_{\textrm{tot}}$) of receptor in solution:
-
-<p align="center">
-$K_d = \frac{[R][L]}{[R \bullet L]} = \frac{([R]_{\textrm{tot}}-[R \bullet L])[L]}{[R \bullet L]}$
-</p>
-
-We can now express the fractional occupancy of binding sites, $F_b$ (fraction occupied divided by total number of binding sites):
-
-<p align="center">
-$F_b = \frac{[R \bullet L]}{[R]_{\textrm{tot}}}$
-</p>
-
-which rearranging we can express as:
-
-<p align="center">
-$F_b = \frac{[L]}{K_d+[L]}$
-</p>
-
-## Fractional occupation
-
-```{r echo=FALSE, fracocc, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Sketch of how the fractional occupation of binding sites increases as the equilibrium is forced to complex with increasing ligand concentration. The most valuable data is found at low values of $[L]/K_d$'}
-knitr::include_graphics("images/fracocc.png")
-```
 
 ## Understanding this equilibrium
 
@@ -113,7 +89,7 @@ Unlike the Job plot we are keeping the concentration of either the ligand or the
 
 Just as in Job plot other factors have to be kept constant: ionic strength, pH, solvent mixture
 
-## Scatchard Analysis[.smaller]
+## Scatchard Analysis{.smaller}
 
 If we define the number of moles of ligand, $L$, bound per mole of receptor, $R$, (regardless of state) as $r$, then:
 
@@ -121,12 +97,22 @@ If we define the number of moles of ligand, $L$, bound per mole of receptor, $R$
 $r = \frac{[LR]}{[R]+[LR]}$
 </p>
 
-and from our equilibrim expression, $K_d=\frac{[L][R]}{[LR]}$ we can derive an expression for $[LR]$:
+r is sometimes called the fractional occupation of binding sites.
+
+## Fractional occupation
+
+```{r echo=FALSE, fracocc, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Sketch of how the fractional occupation of binding sites increases as the equilibrium is forced to complex with increasing ligand concentration. The most valuable data is found at low values of $[L]/K_d$'}
+knitr::include_graphics("images/fracocc.png")
+```
+
+## Scatchard Analysis{.smaller}
+
+From our equilibrium expression, $K_d=\frac{[L][R]}{[LR]}$ we can derive an expression for $[LR]$:
 
 <p align="center">
 $[LR]=\frac{[L][R]}{K_d}$
 </p>
-
+a
 We can now say:
 
 <p align="center">
@@ -136,4 +122,63 @@ $r = \frac{\frac{[L][R]}{K_d}}{[R]+\frac{[L][R]}{K_d}}$
 
 Which rearranges to:
 
+<p align="center">
 $r = \frac{[L]}{K_d+[L]}$
+</p>
+
+Now we have an expression for the fractional occupation of binding sites with respect only to the concentration of free ligand, $L$ and the dissociation constant of binding, $K_d$.
+
+## Scatchard Analaysis{.smaller}
+
+This can now be rearranged to give a linear, $y=mx+c$ relationship:
+
+<p align="center">
+$\frac{r}{[L]} = \frac{1}{K_d}-\frac{r}{K_d}$
+</p>
+
+```{r echo=FALSE, singlescatchard, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Sketch of a Scatchard graph for a single site receptor-ligand complex. Both the gradient and intercept can be used to determine the binding constant $K_b$, with gradient $-1/K_d$ and intercept $1/K_d$.'}
+knitr::include_graphics("images/singlescatchard.png")
+```
+
+A graph of $r/[L]$ agains $r$ should be linear with a gradient of $-1/K_d$ (or $-K$)
+
+The concentration of ligand used here is 'free ligand', not involved in complexing in any form.
+
+## An aside
+
+Why not plot $\frac{1}{r} = 1 + \frac{K_d}{[L]}$, it's equally valid...
+
+yes but...
+
+Data tends to clump on this plot, leading to greater uncertainties in the derived values, however...
+
+it will depend on the data measured, so frequently both plots are checked.
+
+## Another aside
+
+In many enzyme studies the analysis is simplified still further by using a large excess (>100x)of 'ligand' (the enzyme would be the receptor), in essence $[L]_f = [L]_\textrm{tot}$.
+
+In these cases 'turnover' of the enzyme is frequently used as the property changing with binding, as the ligand substrate is required for the enzyme to work.
+
+## What happens if there is more than one binding site?
+
+We can modifiy our fractional occupation of binding sites equation to take account of multiple binding sites, B:
+
+<p align="center">
+$r = \frac{B[L]}{K_d+B[L]}$
+</p>
+
+This assumes that the $B$ binding sites are *equivalent* and *independent*.
+
+Therefore $K_d$ becomes an *average* binding constant.
+
+This then rearranges to:
+
+<p align="center">
+$\frac{r}{[L]} = \frac{B}{K_d}-\frac{r}{K_d}$
+</p>
+
+*this equation is the one referred to as the Scatchard equation and is always used as if only one binding site $B=1$*
+
+## What happens if they aren't equivalent?
+
