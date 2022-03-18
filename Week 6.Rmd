@@ -136,7 +136,7 @@ This can now be rearranged to give a linear, $y=mx+c$ relationship:
 $\frac{r}{[L]} = \frac{1}{K_d}-\frac{r}{K_d}$
 </p>
 
-```{r echo=FALSE, singlescatchard, out.width='60%', fig.show='hold', fig.align='center', fig.cap='Sketch of a Scatchard graph for a single site receptor-ligand complex. Both the gradient and intercept can be used to determine the binding constant $K_b$, with gradient $-1/K_d$ and intercept $1/K_d$.'}
+```{r echo=FALSE, singlescatchard, out.width='40%', fig.show='hold', fig.align='center', fig.cap='Sketch of a Scatchard graph for a single site receptor-ligand complex. Both the gradient and intercept can be used to determine the binding constant $K_b$, with gradient $-1/K_d$ and intercept $1/K_d$.'}
 knitr::include_graphics("images/singlescatchard.png")
 ```
 
@@ -182,3 +182,212 @@ $\frac{r}{[L]} = \frac{B}{K_d}-\frac{r}{K_d}$
 
 ## What happens if they aren't equivalent?
 
+It depends on how similar the binding constants $K_b$ are.
+
+If 'close' probably just a get a *bad fit* on a single straight line.
+
+If very different should see two different regions.
+
+```{r echo=FALSE, twoscatchard, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The same treatment of data can be used for data that has more than one binding mode, but the data has to be split in order to fit to more than one line.'}
+knitr::include_graphics("images/scatcharddual.png")
+```
+
+[Binding of ligands to proteins - including more than one binding site](http://libproxy.bath.ac.uk/login?url=https://pubs.acs.org/doi/pdf/10.1021/acsomega.7b01437)
+
+## What if binding is cooperative?
+
+This is the case for haemoglobin. When one oxygen binds to an iron centre in the haem molecule it induces a structural change in the haem which in turn affects the structure of the protein.
+
+```{r echo=FALSE, haem, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The binding of $O_2$ to haem changes the structure of the whole protein, making it more favorble to bind further oxygen molecules.'}
+knitr::include_graphics("images/Hemoglobin_t-r_state_ani.gif")
+```
+
+[Haem Binding](https://commons.wikimedia.org/wiki/File:Hemoglobin_t-r_state_ani.gif) [User:BerserkerBen](https://en.wikipedia.org/wiki/User:BerserkerBen), [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons
+
+
+## What if binding is cooperative?{.smaller}
+
+Hill-Langmuir equation describes how the fractional occupation of binding sites.
+
+<p align="center">
+$r=\frac{1}{1+\left(\frac{K_b}{[L]}\right)^n}=\frac{[L]^n}{K_d+[L]^n}$*
+</p>
+
+* *just a note that althought I've said the fractional occupation is $r$ (as above) this often has other symbols including $\theta$ or $p$*
+
+```{r echo=FALSE, hill, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The Hill-Langmuir equation accurately models the binding of oxygen to haemoglobin using a model just like a Langmuir isotherm.'}
+knitr::include_graphics("images/Hilldata.png")
+```
+
+[Hill Plot](https://commons.wikimedia.org/wiki/File:Plot_of_%25_saturation_of_O2_binding_to_haemoglobin_as_a_function_of_O2_pressure_-_from_1910_Hill_paper.png) Richard Sear, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons
+
+## What if binding is cooperative?
+
+The Hill-Langmuir equation may be linearised:
+
+<p align="center">
+$\log\left(\frac{r}{1-r}\right)=n \log [L]-n\log K_b$
+</p>
+
+Here a plot of $\log\left(\frac{r}{1-r}\right)$ against $\log [L]$ will allow both the Hill coefficient $n$, and the equilibrium constant of binding $K_b$ to be determined
+
+This $n$ coefficient describes how much cooperation there is between the binding sites.
+
+*As with any **log-log** plot there is a large error to these values, so many data points are required*
+
+## Some examples with DNA
+
+There is a lot of interest in being able to *stain* DNA for various reasons, most of these dyes have fluorescent properties
+
+A good stain will:
+
+- be photochemically stable
+- have a high binding affinity ($K_b$)
+- have a high molar extinction coefficient
+- have a large increase in fluorescence upon binding
+- have negligable fluorescence in free solution
+
+## Some examples of binding with DNA
+
+Modes of binding to DNA
+
+<div class="columns-2">
+<span style="color:crimson">**External Binding**</span>
+
+- Electrostatic
+- Stacking
+
+<span style="color:teal">**Groove Binding**</span>
+
+- Major groove binding
+- Minor groove binding
+
+<span style="color:darkorange">**Intercalation**</span>
+
+- monomer
+- dimer
+- threading
+- partial
+
+</div>
+
+Most ligands will have more than one mode of binding, usually accessed at different mixing ratios.
+
+## DNA binders
+
+In the case of DNA when studying binding we normally see papers refering to either 
+
+
+- the P/D ratio (phosphate to dye)
+
+- the N/C ratio (nucleotide to chromophore)
+
+In either case it is the number of bases of DNA per one ligand molecule (or sub part in a molecular dimer).
+
+
+## DNA binders - Intercalators
+
+<div class="columns-2">
+
+```{r echo=FALSE, proflavin, out.width='70%', fig.show='hold', fig.align='center', fig.cap='proflavin.'}
+knitr::include_graphics("images/proflavin.png")
+```
+
+```{r echo=FALSE, thionine, out.width='70%', fig.show='hold', fig.align='center', fig.cap='thionine.'}
+knitr::include_graphics("images/thionine.png")
+```
+
+```{r echo=FALSE, MB, out.width='70%', fig.show='hold', fig.align='center', fig.cap='methylene blue.'}
+knitr::include_graphics("images/MB.png")
+```
+
+
+```{r echo=FALSE, ethidiumbromide, out.width='70%', fig.show='hold', fig.align='center', fig.cap='ethidium bromide.'}
+knitr::include_graphics("images/ethidiumbromide.png")
+```
+</div>
+
+
+[Phenathiazinium binding to DNA](https://onlinelibrary.wiley.com/doi/10.1002/bip.360350502)
+[Ethidium bromide binding to DNA](http://libproxy.bath.ac.uk/login?url=https://www.nature.com/articles/emm200368.pdf)
+
+## DNA binders - Intercalators - modifying the chromophore
+
+<div class="columns-2">
+
+```{r echo=FALSE, YOTO, out.width='60%', fig.show='hold', fig.align='center', fig.cap='x = 0, oxazole yellow x = S, thiazole orange.'}
+knitr::include_graphics("images/YOTO.png")
+```
+
+
+```{r echo=FALSE, YOTOpro, out.width='60%', fig.show='hold', fig.align='center', fig.cap='x = 0, YO-Pro-1 x = S, TO-Pro-1.'}
+knitr::include_graphics("images/YOTOpro.png")
+```
+</div>
+
+```{r echo=FALSE, YOYOTOTO, out.width='70%', fig.show='hold', fig.align='center', fig.cap='x = 0, YOYO-1 x = S, TOTO-1.'}
+knitr::include_graphics("images/YOYOTOTO.png")
+```
+
+## Semi-intercalators
+
+A number of transition metal complexes are semi-intercalators which sometimes kink the DNA.
+
+```{r echo=FALSE, Rucomplex, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The ruthenium complexes exist in both Δ and Λ forms. [Ru(phen)$_3$]$^{2+}$ or [Ru(phen)$_2$dppz)]$^{2+}$'}
+knitr::include_graphics("images/Rucomplex.png")
+```
+
+
+## Semi-intercalators
+
+```{r echo=FALSE, Rusemi, out.width='30%', fig.show='hold', fig.align='center', fig.cap='[Ru(tap)$_2$dppz)]$^{2+}$ semi-intercalating to DNA causing a kink'}
+knitr::include_graphics("images/Rusemi.png")
+```
+
+[PDB Semi-intercalator](https://www.rcsb.org/3d-view/3QRN)
+
+[Semi-intercalation of ruthenium complex leading to kink in DNA duplex](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3203786/)
+
+## Grove binders
+
+There are a number of grove binding dyes which share same properties...
+
+
+<div class="columns-2">
+```{r echo=FALSE, DAPI, out.width='80%', fig.show='hold', fig.align='center', fig.cap='DAPI'}
+knitr::include_graphics("images/DAPI.png")
+```
+
+```{r echo=FALSE, distamycinA, out.width='80%', fig.show='hold', fig.align='center', fig.cap='distamycin A'}
+knitr::include_graphics("images/distamycinA.png")
+```
+
+```{r echo=FALSE, netropsin, out.width='80%', fig.show='hold', fig.align='center', fig.cap='netropsin'}
+knitr::include_graphics("images/netropsin.png")
+```
+
+```{r echo=FALSE, hoechst33258, out.width='80%', fig.show='hold', fig.align='center', fig.cap='hoechst 33258'}
+knitr::include_graphics("images/hoechst33258.png")
+```
+</div>
+
+## Grove binders
+
+
+```{r echo=FALSE, hoeschtbinding, out.width='40%', fig.show='hold', fig.align='center', fig.cap='Hoechst 33258 binding to the minor groove of DNA'}
+knitr::include_graphics("images/hoeschtbinding.png")
+```
+
+[Hoechst binding to DNA](https://febs.onlinelibrary.wiley.com/doi/epdf/10.1111/j.1432-1033.1994.tb18917.x)
+
+[PDB of Hoechst binding to DNA](https://www.rcsb.org/3d-view/264D)
+
+## The workshop
+
+Bring your devices...
+
+we are going to 'do' a Scatchard analysis on some student data of ethidium bromide binding to polymer calf thymus DNA
+
+- look at some of the difficulties in the fits
+- consider errors and our values
+- consider how the experiment could have been improved
