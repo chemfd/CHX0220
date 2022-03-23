@@ -1,0 +1,103 @@
+---
+title: "CH3/40220"
+subtitle: "Workshop: Scatchard Analysis"
+author: "Fiona Dickinson"
+date: "10/03/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Course Timetable
+
+- Week 1: <span style="color:lightgrey">In Person - Intro to the course, refresher course on thermodynamics</span>
+- Week 2: <span style="color:lightgrey">LOIL - Lecture - Crown & lariat ethers and related molecules</span>
+- Week 3: <span style="color:lightgrey">In Person - Workshop (research paper based exercise)</span>
+- Week 4: <span style="color:lightgrey">LOIL - Lecture - Self assembly the basics, DNA duplexing and beyond</span>
+- Week 5: <span style="color:lightgrey">In Person - Workshop (research paper based exercise) </span>
+- Week 6: <span style="color:lightgrey">LOIL - Lecture - Tertiary structures</span>
+- Week 7: <span style="color:crimson">In Person - Workshop (data fitting exercise)</span>
+- Week 8: <span style="color:darkturquoise">LOIL - Lecture - Binding of small molecules to biopolymers</span>
+- Week 9: In Person - Workshop (research paper based exercise)
+- Week 10: <span style="color:darkturquoise">LOIL - Lecture - Solvation, hydrodynamics & osmosis</span>
+- Week 11: In Person - Workshop example exam questions
+
+## The workshop
+
+There is a datafile provided scatchard.xlsx.
+
+You will use whatever form of data analysis software you choose to analyse the provided data for Ethidium Bromide and/or Propidium Iodide.
+
+The exercise is to show you some of the practicalities of doing such a fit and to consider the weaknesses of the data set.
+
+
+## Workshop - The solutions
+
+**Ethidium Bromide**
+
+There were two solutions made up, one 'dye only' solution, another 'dye & CT DNA' solution.
+
+*Dye only* - total volume 5.000 mL
+
+- 4.955 mL of 50 mM sodium phosphate buffer (pH 6.9 25 mM Na~2~HPO~4~ and 25 mM NaH~2~PO~4~)
+- 45 µL of 1.1248 mM Ethidium Bromide solution  in buffer
+
+*Dye DNA* - total volume 5.000 mL
+
+- 4.380 mL of 1.154 mM calf thymus DNA in 50 mM phosphate buffer
+- 45 µL 1.1248 mM of Ethidium Bromide solution in buffer
+- 575 µL 50 mM phosphate buffer
+
+*All concentrations were determined spectroscopically*
+
+## Workshop - The solutions
+
+There were two solutions made up, one 'dye only' solution, another 'dye & CT DNA' solution.
+
+*Dye only* - total volume 5.000 mL
+
+- 4.875 mL of 50 mM sodium phosphate buffer (pH 6.9 25 mM Na~2~HPO~4~ and 25 mM NaH~2~PO~4~)
+- 125 µL of 0.401 mM Propidium Iodide solution  in buffer
+
+*Dye DNA* - total volume 5.000 mL
+
+- 4.380 mL of 1.154 mM calf thymus DNA in 50 mM phosphate buffer
+- 125 µL of 0.401 mM Propidium Iodide solution in buffer
+- 495 µL 50 mM phosphate buffer
+
+*All concentrations were determined spectroscopically*
+
+
+## Workshop - Experimental methods
+
+Volumes of dye:DNA solution indicated were added to 3000 µL of *dye only* solution of the relevant dye, and the emission intensity at λ~max, em~ was averaged and recorded.
+
+(EB λ~max, em~ = 605 nm, PI λ~max, em~ = 617 nm)
+
+Solutions were well mixed and were all kept at 22 ºC for the whole experiment.
+
+When not being analysed solutions were kept in the dark.
+
+Emission spectra were recorded immediately after mixing.
+
+## Workshop - tasks
+
+Plot the intensity of emission against either [DNA] or P/D ([DNA]/[dye]).
+
+Extrapolate to a value of I~∞~ (when the DNA is all bound to DNA, the maximum possible emisison intensity)
+
+Determine the proportion of DNA bound to dye for each measurement.
+
+Plot an appropriate Scatchard graph to determine the equilibrium constant of binding, and number of available binding sites per dye.
+
+## Workshop - discussion
+
+What weaknesses are there in the experimental data?
+
+What could have been improved about the method?
+
+How can the maximum intensity be better estimated?
+
+Any other thoughts?
